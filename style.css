@@ -11,13 +11,6 @@ body {
     color: var(--cor-principal);
 }
 
-header {
-    background-color: #5c755d; 
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
 .lead, .btn-link {
     color: var(--cor-destaque);
     font-weight: 700;
