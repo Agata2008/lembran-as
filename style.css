@@ -28,3 +28,14 @@ a, .btn-link:hover {
 a:hover {
     color: var(--cor-destaque);
 }
+
+
+body {
+    background-color: #c7f0c7;
+}
+
+header {
+    background-color: #316431;
+    color: white;
+    padding: 20px;
+}
