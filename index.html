@@ -228,6 +228,27 @@
     </div>
 </div>
 
+<script>
+
+    window.onscroll = function() {
+        const button = document.getElementById("scrollToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    document.getElementById("scrollToTopBtn").onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+</script>
+
+
+
 <footer class="container py-5" id="contato">
     <h2>Entre em contato</h2>
     <div>
