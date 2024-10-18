@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <a class="navbar-brand" href="#inicio">Minhas lembranças</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +33,7 @@
 
 
 
-     <header class="container text-center">
+     <header class="container text-center" id="#inicio">
     <img src="img/WhatsApp Image 2024-10-17 at 15.31.01.jpg"  alt="minha foto" class="rounded-circle" width="150" height="150" srcset="">
     <p class="lead">Eu sou Ágata</p>
     <h1>Sou uma estudante de ensino médio</h1>
@@ -231,6 +231,27 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    window.onscroll = function() {
+        const button = document.getElementById("scrollToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+
+    document.getElementById("scrollToTopBtn").onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    };
+</script>
+
 
 <footer class="container py-5" id="contato">
     <h2>Entre em contato</h2>
